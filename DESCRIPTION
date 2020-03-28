@@ -1,0 +1,18 @@
+Package: ex4fars
+Title: Functions To Read And Analyze Fars Data
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Daniel",
+           family = "fs88",
+           role = c("aut", "cre"),
+           email = "first.last@example.com")
+Description: This package read fars data contained in bz2 files and examine aspects
+             of it.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.0

@@ -1,0 +1,28 @@
+---
+title: "ex4_vignette"
+author: "danielfs88"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ex4_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This vignette shows how to use `ex4fars` package to read, summarize and plot some fars data besides shows what is fars data. 
+
+## Fars data
+
+Fars is a acronymous to *Fatality Analysis Reporting System* that is a dataset recorded by ([NHTSA](https://www.nhtsa.gov/)) (National Highway Traffic Safety Administration) that is an operating administration from ([U.S. Department of Transportation](https://www.transportation.gov/)). To check out the latest data you can click ([here](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars)).
+
+## ex4fars
+
+The `ex4fars` package includes functions to read a dataset passing by as argument only the desired years. Also it has functions to summarize this data using a year as argument and plot the fatalities in a U.S. state passing the state code and a year. To see each function brief explanation plus example of usage, check out help files.
+
