@@ -12,6 +12,7 @@
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
 #'
+#' @export
 fars_read <- function(filename) {
         if(!file.exists(filename))
                 stop("file '", filename, "' does not exist")
@@ -32,6 +33,7 @@ fars_read <- function(filename) {
 #'
 #' @return A filename string with input received
 #'
+#' @export
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
@@ -118,9 +120,9 @@ fars_map_state <- function(state.num, year) {
         data <- fars_read(filename)
         state.num <- as.integer(state.num)
 
-        if(!(state.num %in% unique(data$STATE)))
+        if(!(state.num %in% unique(.data$STATE)))
                 stop("invalid STATE number: ", state.num)
-        data.sub <- dplyr::filter(data, STATE == state.num)
+        data.sub <- dplyr::filter(.data, STATE == state.num)
         if(nrow(data.sub) == 0L) {
                 message("no accidents to plot")
                 return(invisible(NULL))
