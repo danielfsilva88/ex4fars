@@ -1,6 +1,8 @@
 Package: ex4fars
 Title: Functions To Read And Analyze Fars Data
 Version: 0.0.0.9000
+Depends:  R (>= 3.5.1)
+Imports: dplyr, graphics, maps, readr, tidyr
 Authors@R: 
     person(given = "Daniel",
            family = "fs88",
