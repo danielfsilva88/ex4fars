@@ -24,5 +24,14 @@ Fars is a acronymous to *Fatality Analysis Reporting System* that is a dataset r
 
 ## ex4fars
 
-The `ex4fars` package includes functions to read a dataset passing by as argument only the desired years. Also it has functions to summarize this data using a year as argument and plot the fatalities in a U.S. state passing the state code and a year. To see each function brief explanation plus example of usage, check out help files.
+The `ex4fars` package includes functions to read a fars dataset cointained in *.bz2 files downloaded in ([NHTSA - FARS](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars)) passing by as argument only the desired years. Also it has functions to summarize this data using a year as argument and plot the fatalities in a U.S. state passing the state code and a year. These functions are:
 
+- make_filename
+- fars_read
+- fars_read_years
+- fars_summarize_years
+- fars_map_state
+
+To see each function brief explanation plus example of usage, check out help files.
+
+###Important: The *.bz2 files need to be placed in working directory to read fars function reckonize them.
